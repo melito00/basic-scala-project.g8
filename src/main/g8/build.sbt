@@ -39,9 +39,9 @@ initialCommands := "import $organization$.$name;format="lower,word"$._"
 
 initialCommands in console := "import scalaz._, Scalaz._"
 
-unmanagedJars in Compile +=
-  Attributed.blank(
-    file(scala.util.Properties.javaHome) / "/lib/jfxrt.jar")
+//unmanagedJars in Compile +=
+//  Attributed.blank(
+//    file(scala.util.Properties.javaHome) / "/lib/jfxrt.jar")
 
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oD")
 
