@@ -4,19 +4,19 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.13.3"
 
 scalacOptions := Seq(
   "-Xfatal-warnings", "-deprecation", "-feature", "-unchecked"
 )
 
-val scalazVersion = "7.1.0"
+val scalazVersion = "7.3.2"
 
 assemblyJarName in assembly := s"$name;format="Camel"$-\${version.value}"
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test" withSources() withJavadoc(),
-  "org.scalacheck" %% "scalacheck" % "1.13.5" % "test" withSources() withJavadoc()
+  "org.scalatest" %% "scalatest" % "3.2.0" % "test" withSources() withJavadoc(),
+  "org.scalacheck" %% "scalacheck" % "1.14.1" % "test" withSources() withJavadoc()
 
 //  "org.scalaz" %% "scalaz-core" % scalazVersion,
 //  "org.scalaz" %% "scalaz-effect" % scalazVersion,
