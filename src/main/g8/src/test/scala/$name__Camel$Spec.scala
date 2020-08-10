@@ -1,8 +1,8 @@
 package $organization$.$name;format="lower,word"$
 
-import org.scalatest.FunSpec
+import org.scalatest.AnyFunSpec
 
-class HelloWorldSpec extends FunSpec {
+class HelloWorldSpec extends AnyFunSpec {
   describe("Adding 1 to 1") {
     it("should equals 2"){
       assert(1+1 == 2)
