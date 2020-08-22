@@ -31,6 +31,12 @@ Including:
 
 ## CHANGELOG
 
+### 0.1.8
+ * Scala 2.13.3
+ * ScalaTest 3.2.2
+ * ScalaCheck 1.14.3
+ * SBT 1.3.13
+
 ### 0.1.7
  * Scala 2.13.3
  * ScalaTest 3.2.0
