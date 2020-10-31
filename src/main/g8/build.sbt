@@ -4,7 +4,7 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "2.13.3"
+ThisBuild / scalaVersion := "2.13.3"
 
 scalacOptions := Seq(
   "-Xfatal-warnings", "-deprecation", "-feature", "-unchecked"
