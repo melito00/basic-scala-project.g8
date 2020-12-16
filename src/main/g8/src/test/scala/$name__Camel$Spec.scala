@@ -1,6 +1,6 @@
 package $organization$.$name;format="lower,word"$
 
-import org.scalatest.AnyFunSpec
+import org.scalatest.funspec.AnyFunSpec
 
 class HelloWorldSpec extends AnyFunSpec {
   describe("Adding 1 to 1") {
