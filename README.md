@@ -1,4 +1,11 @@
 This is a [giter8](http://www.foundweekends.org/giter8/) template for a new scala project.
+
+
+```shell
+sbt new melito00/basic-scala-project.g8
+```
+
+
 Including:
 * `main` and `test` source directories
 * [ScalaTest](http://www.scalatest.org/)
@@ -23,6 +30,12 @@ Including:
   - sbt-assembly
 
 ## CHANGELOG
+
+### 0.1.8
+ * Scala 2.13.3
+ * ScalaTest 3.2.2
+ * ScalaCheck 1.14.3
+ * SBT 1.3.13
 
 ### 0.1.7
  * Scala 2.13.3
