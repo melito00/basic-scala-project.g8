@@ -1,11 +1,12 @@
+ThisBuild / organization := "$organization$"
+ThisBuild / scalaVersion := "2.13.4"
+ThisBuild / version := "$version$"
+
 lazy val root = (project in file(".")).
   enablePlugins(JavaAppPackaging).
   settings(
-    name := "scala-test-2",
-    organization := "mobi.jnkymd",
-    version := "0.0.1",
+    name := "$name$",
     javaOptions += "-Xshare:off",
-    scalaVersion := "2.12.6",
     scalacOptions ++= Seq(
       "-Xfatal-warnings", "-deprecation", "-feature", "-unchecked", "-explaintypes",
       "-uniqid", "-Ydelambdafy:method", "-target:jvm-1.8"
@@ -21,9 +22,9 @@ lazy val root = (project in file(".")).
   )
 
 lazy val testDependencies = Seq(
-  "org.scalatest" %% "scalatest" % "3.0.5" % Test
+  "org.scalatest" %% "scalatest" % "3.2.3" % Test withSources() withJavadoc(),
+  "org.scalatestplus" %% "scalacheck-1-14" % "3.2.2.0" % Test withSources() withJavadoc()
 );
-
 
 /*
 val scalazVersion = "7.1.0"

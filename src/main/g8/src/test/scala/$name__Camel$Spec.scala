@@ -15,7 +15,7 @@ class HelloWorldSpec extends AnyFunSpec {
 class SomeSpec extends AnyFunSpec with Matchers with GivenWhenThen {
   val targetList = List(1, 1, 2, 3, 5, 8)
 
-  describe(s"On ${targetList}") {
+  describe(s"On \${targetList}") {
     describe("Finding the last element of a list") {
       it("should equal 8") {
         val result = Something.last(targetList)
